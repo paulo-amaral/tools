@@ -6,7 +6,7 @@
 #Var
 INTERFACE='eth0' #your nic ( eth0, eth1...) 
 SUBNET=''        
-NETMASK='255.255.255.0'
+NETMASK=''
 IP_RANGE_START=''
 IP_RANGE_END=''
 GATEWAY=''
