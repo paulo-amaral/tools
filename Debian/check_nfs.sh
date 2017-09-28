@@ -1,5 +1,6 @@
 #!/bin/sh
 # Script to check if NFS is mounted properly
+#change /opt/backup to reflect your nfs mountpoint
 
 REMOTESERVER_IP='' 
 REMOTEFOLDER=''
