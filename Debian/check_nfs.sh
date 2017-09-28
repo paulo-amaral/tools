@@ -1,9 +1,6 @@
 #!/bin/sh
 # Script to check if NFS is mounted properly
 
-#!/bin/sh
-# Script to check if NFS is mounted properly
-
 REMOTESERVER_IP='' 
 REMOTEFOLDER=''
 MOUNTPOINT=''
