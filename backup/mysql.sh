@@ -1,5 +1,5 @@
 #!/bin/bash
-#-------------------------------------------------------
+#--------------------------------------------------------------------------
 #SCRIPT BACKUP DATABASES MYSQL
 #Paulo Amaral
 #Date - 16.10.2017
@@ -39,7 +39,7 @@ databases=$(mysql --user=$user -p$password -e "SHOW DATABASES;" | grep -Ev "(Dat
 #create backup folder
 if [ ! -d $backup_db/$current_date ]
 then
-   mkdir  -p $backup_db/$current_date || exit
+   mkdir -p $backup_db/$current_date || exit
 fi
 
 #Backup Database and send mail for admin
@@ -63,13 +63,12 @@ done
 
 #Check Mailx Package
 check_mailx() {
-
     echo -e "Checking if Mailx is installed\n"
     echo    "--------------------------------"
     MAILX=$(which mailx | wc -l)
     if [ $MAILX -eq 0 ] ; then
         echo "Mailx not installed - Installing now - Please wait \n"
-        apt-get install -y  heirloom-mailx
+        apt-get install -y heirloom-mailx
     else
         echo "Mailx is installed "
     fi
